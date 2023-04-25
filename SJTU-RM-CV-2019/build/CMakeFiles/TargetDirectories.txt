@@ -1,0 +1,5 @@
+/home/mechax/Code/SJTU-RM-CV-2019/build/CMakeFiles/run.dir
+/home/mechax/Code/SJTU-RM-CV-2019/build/CMakeFiles/create-startup.dir
+/home/mechax/Code/SJTU-RM-CV-2019/build/CMakeFiles/train-cnn.dir
+/home/mechax/Code/SJTU-RM-CV-2019/build/CMakeFiles/edit_cache.dir
+/home/mechax/Code/SJTU-RM-CV-2019/build/CMakeFiles/rebuild_cache.dir
