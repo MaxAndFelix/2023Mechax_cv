@@ -146,6 +146,7 @@ int main(int argc, char *argv[]) {
                     });
                 }
                 last_state = curr_state;//更新上一帧状态
+                if (save_video) saveVideos(src);
                 if(run_by_frame) cv::waitKey(0);
             });
         } while (ok);

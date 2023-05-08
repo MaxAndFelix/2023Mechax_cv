@@ -109,11 +109,16 @@ end:
         timeb t;
         ftime(&t);
         long now = t.time * 1000 + t.millitm;
-        if(now-100>last_time_zero)
+        if(now-200>last_time_zero&&is_zero==0)
         {
-            cout<<"********"<<endl;
+            //cout<<"********"<<endl;
             last_time_zero=now;    
-            // is_zero=1;
+            is_zero=1;
+            sendBoxPosition_0(0);
+        }
+        if(now-100>last_time_zero&&is_zero==1)
+        {
+            last_time_zero=now;  
             sendBoxPosition_0(0);
         }
     // }

@@ -123,6 +123,8 @@ std::map<std::string, std::pair<std::string, void(*)(void)>> options = {
             LOGM("Enable show processed image");
             show_energy = true;
             LOGM("Enable show energy part");
+            save_video = true;
+            LOGM("Enable save video!");
         }
     }}
 };
