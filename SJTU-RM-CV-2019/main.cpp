@@ -28,6 +28,7 @@
 using namespace cv;
 using namespace std;
 // ls /dev/ttyUSB* --color=never
+//documents/SJTU-RM-CV-2019/tools/create-starup.sh start 
 McuData mcu_data = {    // 单片机端回传结构体
         0,              // 当前云台yaw角
         0,              // 当前云台pitch角

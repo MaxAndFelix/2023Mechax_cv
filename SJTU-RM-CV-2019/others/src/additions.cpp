@@ -29,15 +29,20 @@ extern ArmorFinder armor_finder;
 extern Energy energy;
 
 void uartReceive(Serial *pSerial) {
-    char buffer[40];
-    //cout << "data receive start!" << endl;
+    char buffer[8];
     LOGM(STR_CTR(WORD_LIGHT_WHITE, "data receive start!"));
     while (true) {
         memset(buffer, 0, sizeof(buffer));
-        pSerial->ReadData((uint8_t *) buffer, sizeof(mcu_data)+1);
-        // cout << buffer[1] << endl;
-        if (buffer[sizeof(mcu_data)] == '\n') {
-            memcpy(&mcu_data, buffer, sizeof(mcu_data));
+        pSerial->ReadData((uint8_t *) buffer, 1);
+        while(buffer[0]!=0x10)
+        {
+            pSerial->ReadData((uint8_t *) buffer, 1);
+        }
+        pSerial->ReadData((uint8_t *) buffer+1, 7);
+        if (buffer[7] == '\n') {
+            
+            // memcpy(&mcu_data, buffer, sizeof(mcu_data));
+            // printf("Get yaw:%f",mcu_data.curr_yaw);
 //            LOGM("Get, state:%c, mark:%d!", mcu_data.state, (int) mcu_data.mark);
 //            LOGM("Get yaw: %f, pitch: %f!", mcu_data.curr_yaw, mcu_data.curr_pitch);
 //            LOGM("Get delta x: %d, delta y: %d!", mcu_data.delta_x, mcu_data.delta_y);
