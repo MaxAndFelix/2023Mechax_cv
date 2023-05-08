@@ -38,7 +38,8 @@ void ArmorFinder::antiTop() {
     // 通过线性拟合计算出角度为0时对应的时间点
     // 通过两次装甲角度为零的时间差计算陀螺旋转周期
     // 根据旋转周期计算下一次装甲出现在角度为零的时间点
-    if (getPointLength(last_box.getCenter() - target_box.getCenter()) > last_box.rect.height * 1.5) {
+    //0.8原本为1.5
+    if (getPointLength(last_box.getCenter() - target_box.getCenter()) > last_box.rect.height * 0.8) {
         auto front_time = getFrontTime(time_seq, angle_seq);
         auto once_periodms = getTimeIntervalms(front_time, last_front_time);
 //        if (abs(once_periodms - top_periodms[-1]) > 50) {
