@@ -20,12 +20,13 @@
 #define BOX_RED     ENEMY_RED
 #define BOX_BLUE    ENEMY_BLUE
 
-#define IMAGE_CENTER_X      (320)
-#define IMAGE_CENTER_Y      (240-20)
+#define IMAGE_CENTER_X      (320-50)
+#define IMAGE_CENTER_Y      (240-80)
 
+#define DISTANCE_HEIGHT_8MM (16700.0)
 #define DISTANCE_HEIGHT_5MM (18000.0)     // 单位: cm*pixel
-#define DISTANCE_HEIGHT     DISTANCE_HEIGHT_5MM
-
+#define DISTANCE_HEIGHT     DISTANCE_HEIGHT_8MM
+//装甲板灯条长度 56mm
 #define         B1 1
 #define         B2 2
 #define         B3 3
