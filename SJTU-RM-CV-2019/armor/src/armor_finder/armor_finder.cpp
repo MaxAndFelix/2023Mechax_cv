@@ -96,6 +96,10 @@ end:
         antiTop();
         // cout << "antiTopMode" << endl;
     }else if(target_box.rect != cv::Rect2d()) {
+        timeb t;
+        ftime(&t);
+        long now = t.time * 1000 + t.millitm;
+        last_time_zero=now;   
         anti_top_cnt = 0;
         is_zero = 0;
         time_seq.clear();
@@ -109,9 +113,16 @@ end:
         timeb t;
         ftime(&t);
         long now = t.time * 1000 + t.millitm;
-        if(now-100>last_time_zero)
+        if(now-200>last_time_zero&&is_zero==0)
         {
-            cout<<"********"<<endl;
+            //cout<<"********"<<endl;
+            last_time_zero=now;    
+            is_zero=1;
+            sendBoxPosition_0(0);
+        }else
+        if(now-100>last_time_zero&&is_zero==1)
+        {
+            //cout<<"********"<<endl;
             last_time_zero=now;    
             // is_zero=1;
             sendBoxPosition_0(0);
