@@ -1,7 +1,7 @@
 CMakeFiles/run.dir/energy/src/energy/energy.cpp.o: \
- /home/mechax/Code/SJTU-RM-CV-2019/energy/src/energy/energy.cpp \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/energy/src/energy/energy.cpp \
  /usr/include/stdc-predef.h \
- /home/mechax/Code/SJTU-RM-CV-2019/energy/include/energy/energy.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/energy/include/energy/energy.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -239,12 +239,12 @@ CMakeFiles/run.dir/energy/src/energy/energy.cpp.o: \
  /usr/local/include/opencv2/videoio/videoio_c.h \
  /usr/local/include/opencv2/imgproc/imgproc.hpp \
  /usr/local/include/opencv2/imgproc.hpp \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/constants.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/systime.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/constants.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/systime.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/mechax/Code/SJTU-RM-CV-2019/energy/include/energy/constant.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/additions.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/serial.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/energy/include/energy/constant.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/additions.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/serial.h \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -270,6 +270,6 @@ CMakeFiles/run.dir/energy/src/energy/energy.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/mechax/Code/SJTU-RM-CV-2019/energy/include/energy/param_struct_define.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/options.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/log.h
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/energy/include/energy/param_struct_define.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/options.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/log.h

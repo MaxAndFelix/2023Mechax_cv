@@ -21,6 +21,7 @@
 #include <show_images/show_images.h>
 #include <opencv2/highgui.hpp>
 #include <armor_finder/armor_finder.h>
+#include <sys/timeb.h>
 
 std::map<int, string> id2name = {                               //装甲板id到名称的map
         {-1, "OO"},{ 0, "NO"},
@@ -96,13 +97,26 @@ end:
         // cout << "antiTopMode" << endl;
     }else if(target_box.rect != cv::Rect2d()) {
         anti_top_cnt = 0;
+        is_zero = 0;
         time_seq.clear();
         angle_seq.clear();
         sendBoxPosition(0);
     }else
     {
-        // cout << "send0";
-        sendBoxPosition_0(0);
+        
+        // if(is_zero==0)
+        // {
+        timeb t;
+        ftime(&t);
+        long now = t.time * 1000 + t.millitm;
+        if(now-100>last_time_zero)
+        {
+            cout<<"********"<<endl;
+            last_time_zero=now;    
+            // is_zero=1;
+            sendBoxPosition_0(0);
+        }
+    // }
     }
 
     if(target_box.rect != cv::Rect2d()){

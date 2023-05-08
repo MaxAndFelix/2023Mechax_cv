@@ -1,5 +1,5 @@
 CMakeFiles/run.dir/others/src/camera/camera_wrapper.cpp.o: \
- /home/mechax/Code/SJTU-RM-CV-2019/others/src/camera/camera_wrapper.cpp \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/src/camera/camera_wrapper.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -149,11 +149,11 @@ CMakeFiles/run.dir/others/src/camera/camera_wrapper.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/camera_wrapper.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/additions.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/systime.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/camera_wrapper.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/additions.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/systime.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/serial.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/serial.h \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -253,11 +253,11 @@ CMakeFiles/run.dir/others/src/camera/camera_wrapper.cpp.o: \
  /usr/local/include/opencv2/core/ovx.hpp \
  /usr/local/include/opencv2/core/cvdef.h \
  /usr/local/include/opencv2/core/core.hpp \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/wrapper_head.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/camera_api.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/camera_status.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/camera_define.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/log.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/options.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/config/setconfig.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/config/config.h
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/wrapper_head.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/camera_api.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/camera_status.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/camera_define.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/log.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/options.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/config/setconfig.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/config/config.h

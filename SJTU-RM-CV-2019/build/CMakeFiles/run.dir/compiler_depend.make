@@ -518,6 +518,8 @@ CMakeFiles/run.dir/armor/src/armor_finder/anti_top/anti_top.cpp.o: ../armor/src/
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../others/include/log.h
 
 CMakeFiles/run.dir/armor/src/armor_finder/armor_box/armor_box.cpp.o: ../armor/src/armor_finder/armor_box/armor_box.cpp \
@@ -1037,6 +1039,8 @@ CMakeFiles/run.dir/armor/src/armor_finder/armor_box/armor_box.cpp.o: ../armor/sr
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../others/include/log.h
 
 CMakeFiles/run.dir/armor/src/armor_finder/armor_finder.cpp.o: ../armor/src/armor_finder/armor_finder.cpp \
@@ -1559,6 +1563,8 @@ CMakeFiles/run.dir/armor/src/armor_finder/armor_finder.cpp.o: ../armor/src/armor
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   /usr/local/include/opencv2/highgui.hpp \
   /usr/local/include/opencv2/imgcodecs.hpp \
   /usr/local/include/opencv2/videoio.hpp \
@@ -2554,6 +2560,8 @@ CMakeFiles/run.dir/armor/src/armor_finder/find/find_armor_box.cpp.o: ../armor/sr
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../armor/include/show_images/show_images.h \
   ../others/include/options.h \
   /usr/local/include/opencv2/highgui.hpp \
@@ -3081,6 +3089,8 @@ CMakeFiles/run.dir/armor/src/armor_finder/find/find_light_blobs.cpp.o: ../armor/
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../others/include/options.h \
   /usr/local/include/opencv2/highgui.hpp \
   /usr/local/include/opencv2/imgcodecs.hpp \
@@ -3606,6 +3616,8 @@ CMakeFiles/run.dir/armor/src/armor_finder/searching_state/searching_state.cpp.o:
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../armor/include/show_images/show_images.h \
   ../others/include/options.h \
   ../others/include/log.h
@@ -4127,6 +4139,8 @@ CMakeFiles/run.dir/armor/src/armor_finder/send_target/send_target.cpp.o: ../armo
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../others/include/config/setconfig.h \
   ../others/include/config/config.h \
   ../others/include/log.h
@@ -4647,7 +4661,9 @@ CMakeFiles/run.dir/armor/src/armor_finder/standby_state/standby_state.cpp.o: ../
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
-  ../others/include/additions.h
+  ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h
 
 CMakeFiles/run.dir/armor/src/armor_finder/tracking_state/tracking_state.cpp.o: ../armor/src/armor_finder/tracking_state/tracking_state.cpp \
   /usr/include/stdc-predef.h \
@@ -5168,6 +5184,8 @@ CMakeFiles/run.dir/armor/src/armor_finder/tracking_state/tracking_state.cpp.o: .
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../armor/include/show_images/show_images.h
 
 CMakeFiles/run.dir/armor/src/show_images/show_images.cpp.o: ../armor/src/show_images/show_images.cpp \
@@ -5688,6 +5706,8 @@ CMakeFiles/run.dir/armor/src/show_images/show_images.cpp.o: ../armor/src/show_im
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
   ../others/include/additions.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   /usr/local/include/opencv2/highgui.hpp \
   /usr/local/include/opencv2/imgcodecs.hpp \
   /usr/local/include/opencv2/videoio.hpp \
@@ -14117,6 +14137,8 @@ CMakeFiles/run.dir/main.cpp.o: ../main.cpp \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../others/include/config/setconfig.h \
   ../others/include/config/config.h \
   ../others/include/log.h
@@ -14666,6 +14688,8 @@ CMakeFiles/run.dir/others/src/additions.cpp.o: ../others/src/additions.cpp \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/opencv2/core/eigen.hpp \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   ../others/include/log.h
 
 CMakeFiles/run.dir/others/src/camera/camera_wrapper.cpp.o: ../others/src/camera/camera_wrapper.cpp \
@@ -15765,6 +15789,10 @@ CMakeFiles/run.dir/others/src/systime.cpp.o: ../others/src/systime.cpp \
 
 ../energy/include/energy/param_struct_define.h:
 
+../others/src/options.cpp:
+
+../energy/include/energy/constant.h:
+
 /usr/include/string.h:
 
 /usr/include/c++/11/stdexcept:
@@ -15914,8 +15942,6 @@ CMakeFiles/run.dir/others/src/systime.cpp.o: ../others/src/systime.cpp \
 /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
@@ -16657,6 +16683,8 @@ CMakeFiles/run.dir/others/src/systime.cpp.o: ../others/src/systime.cpp \
 
 /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
 
+/usr/include/x86_64-linux-gnu/sys/timeb.h:
+
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/eigen3/Eigen/src/Core/Dot.h:
@@ -16791,6 +16819,10 @@ CMakeFiles/run.dir/others/src/systime.cpp.o: ../others/src/systime.cpp \
 
 ../armor/src/armor_finder/standby_state/standby_state.cpp:
 
+/usr/local/include/opencv2/imgproc/imgproc.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
+
 /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
 
 /usr/include/features.h:
@@ -16818,6 +16850,10 @@ CMakeFiles/run.dir/others/src/systime.cpp.o: ../others/src/systime.cpp \
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
@@ -16866,11 +16902,3 @@ CMakeFiles/run.dir/others/src/systime.cpp.o: ../others/src/systime.cpp \
 /usr/include/termios.h:
 
 /usr/local/include/opencv2/highgui/highgui.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
-
-/usr/local/include/opencv2/imgproc/imgproc.hpp:
-
-../others/src/options.cpp:
-
-../energy/include/energy/constant.h:

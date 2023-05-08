@@ -13,7 +13,7 @@
 #include <serial.h>
 #include <armor_finder/classifier/classifier.h>
 #include <additions.h>
-
+#include <sys/timeb.h>
 #define BLOB_RED    ENEMY_RED
 #define BLOB_BLUE   ENEMY_BLUE
 
@@ -117,6 +117,8 @@ private:
     Serial &serial;                                     // 串口对象，引用外部变量，用于和能量机关共享同一个变量
     systime last_front_time;                            // 上次陀螺正对时间
     int anti_top_cnt;
+    int is_zero;
+    long last_time_zero; 
     RoundQueue<double, 4> top_periodms;                 // 陀螺周期循环队列
     vector<systime> time_seq;                           // 一个周期内的时间采样点
     vector<float> angle_seq;                            // 一个周期内的角度采样点

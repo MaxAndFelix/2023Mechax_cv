@@ -1,7 +1,7 @@
 CMakeFiles/run.dir/armor/src/armor_finder/classifier/classifier.cpp.o: \
- /home/mechax/Code/SJTU-RM-CV-2019/armor/src/armor_finder/classifier/classifier.cpp \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/armor/src/armor_finder/classifier/classifier.cpp \
  /usr/include/stdc-predef.h \
- /home/mechax/Code/SJTU-RM-CV-2019/armor/include/armor_finder/classifier/classifier.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/armor/include/armor_finder/classifier/classifier.h \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -414,6 +414,6 @@ CMakeFiles/run.dir/armor/src/armor_finder/classifier/classifier.cpp.o: \
  /usr/local/include/opencv2/core/optim.hpp \
  /usr/local/include/opencv2/core/ovx.hpp \
  /usr/local/include/opencv2/core/cvdef.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/log.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/systime.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/log.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/systime.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/11/iostream

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mechax/Code/SJTU-RM-CV-2019
+CMAKE_SOURCE_DIR = /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mechax/Code/SJTU-RM-CV-2019/build
+CMAKE_BINARY_DIR = /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build
 
 # Utility rule file for create-startup.
 
@@ -67,7 +67,7 @@ include CMakeFiles/create-startup.dir/compiler_depend.make
 include CMakeFiles/create-startup.dir/progress.make
 
 CMakeFiles/create-startup:
-	../tools/create-startup.sh /home/mechax/Code/SJTU-RM-CV-2019 /home/mechax/Code/SJTU-RM-CV-2019/build
+	../tools/create-startup.sh /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019 /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build
 
 create-startup: CMakeFiles/create-startup
 create-startup: CMakeFiles/create-startup.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/create-startup.dir/clean:
 .PHONY : CMakeFiles/create-startup.dir/clean
 
 CMakeFiles/create-startup.dir/depend:
-	cd /home/mechax/Code/SJTU-RM-CV-2019/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mechax/Code/SJTU-RM-CV-2019 /home/mechax/Code/SJTU-RM-CV-2019 /home/mechax/Code/SJTU-RM-CV-2019/build /home/mechax/Code/SJTU-RM-CV-2019/build /home/mechax/Code/SJTU-RM-CV-2019/build/CMakeFiles/create-startup.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019 /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019 /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build/CMakeFiles/create-startup.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/create-startup.dir/depend
 

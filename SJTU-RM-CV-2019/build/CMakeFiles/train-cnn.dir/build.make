@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mechax/Code/SJTU-RM-CV-2019
+CMAKE_SOURCE_DIR = /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mechax/Code/SJTU-RM-CV-2019/build
+CMAKE_BINARY_DIR = /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build
 
 # Utility rule file for train-cnn.
 
@@ -67,7 +67,7 @@ include CMakeFiles/train-cnn.dir/compiler_depend.make
 include CMakeFiles/train-cnn.dir/progress.make
 
 CMakeFiles/train-cnn:
-	gnome-terminal -- bash -c /home/mechax/Code/SJTU-RM-CV-2019/tools/TrainCNN/backward.py
+	gnome-terminal -- bash -c /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/tools/TrainCNN/backward.py
 
 train-cnn: CMakeFiles/train-cnn
 train-cnn: CMakeFiles/train-cnn.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/train-cnn.dir/clean:
 .PHONY : CMakeFiles/train-cnn.dir/clean
 
 CMakeFiles/train-cnn.dir/depend:
-	cd /home/mechax/Code/SJTU-RM-CV-2019/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mechax/Code/SJTU-RM-CV-2019 /home/mechax/Code/SJTU-RM-CV-2019 /home/mechax/Code/SJTU-RM-CV-2019/build /home/mechax/Code/SJTU-RM-CV-2019/build /home/mechax/Code/SJTU-RM-CV-2019/build/CMakeFiles/train-cnn.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019 /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019 /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build/CMakeFiles/train-cnn.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/train-cnn.dir/depend
 

@@ -1,4 +1,5 @@
-CMakeFiles/run.dir/main.cpp.o: /home/mechax/Code/SJTU-RM-CV-2019/main.cpp \
+CMakeFiles/run.dir/main.cpp.o: \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -226,7 +227,7 @@ CMakeFiles/run.dir/main.cpp.o: /home/mechax/Code/SJTU-RM-CV-2019/main.cpp \
  /usr/local/include/opencv2/core/optim.hpp \
  /usr/local/include/opencv2/core/ovx.hpp \
  /usr/local/include/opencv2/core/cvdef.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/serial.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/serial.h \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -252,15 +253,15 @@ CMakeFiles/run.dir/main.cpp.o: /home/mechax/Code/SJTU-RM-CV-2019/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/camera_wrapper.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/additions.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/systime.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/camera_wrapper.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/additions.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/systime.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/wrapper_head.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/camera_api.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/camera_status.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/camera_define.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/video_wrapper.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/wrapper_head.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/camera_api.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/camera_status.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/camera_define.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/video_wrapper.h \
  /usr/local/include/opencv2/highgui/highgui.hpp \
  /usr/local/include/opencv2/highgui.hpp \
  /usr/local/include/opencv2/imgcodecs.hpp \
@@ -272,16 +273,16 @@ CMakeFiles/run.dir/main.cpp.o: /home/mechax/Code/SJTU-RM-CV-2019/main.cpp \
  /usr/local/include/opencv2/videoio/videoio_c.h \
  /usr/local/include/opencv2/imgproc/imgproc.hpp \
  /usr/local/include/opencv2/imgproc.hpp \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/wrapper_head.h \
- /home/mechax/Code/SJTU-RM-CV-2019/energy/include/energy/energy.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/wrapper_head.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/energy/include/energy/energy.h \
  /usr/include/c++/11/queue /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_queue.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/constants.h \
- /home/mechax/Code/SJTU-RM-CV-2019/energy/include/energy/constant.h \
- /home/mechax/Code/SJTU-RM-CV-2019/energy/include/energy/param_struct_define.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/options.h \
- /home/mechax/Code/SJTU-RM-CV-2019/armor/include/armor_finder/armor_finder.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/constants.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/energy/include/energy/constant.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/energy/include/energy/param_struct_define.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/options.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/armor/include/armor_finder/armor_finder.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/stl_map.h \
@@ -293,7 +294,7 @@ CMakeFiles/run.dir/main.cpp.o: /home/mechax/Code/SJTU-RM-CV-2019/main.cpp \
  /usr/local/include/opencv2/tracking/onlineMIL.hpp \
  /usr/local/include/opencv2/tracking/onlineBoosting.hpp \
  /usr/local/include/opencv2/tracking/tldDataset.hpp \
- /home/mechax/Code/SJTU-RM-CV-2019/armor/include/armor_finder/classifier/classifier.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/armor/include/armor_finder/classifier/classifier.h \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -484,6 +485,8 @@ CMakeFiles/run.dir/main.cpp.o: /home/mechax/Code/SJTU-RM-CV-2019/main.cpp \
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
  /usr/local/include/opencv2/core/eigen.hpp \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/config/setconfig.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/config/config.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/log.h
+ /usr/include/x86_64-linux-gnu/sys/timeb.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/config/setconfig.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/config/config.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/log.h

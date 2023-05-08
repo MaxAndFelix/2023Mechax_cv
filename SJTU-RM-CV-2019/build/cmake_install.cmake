@@ -1,4 +1,4 @@
-# Install script for directory: /home/mechax/Code/SJTU-RM-CV-2019
+# Install script for directory: /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mechax/Code/SJTU-RM-CV-2019/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,7 +1,7 @@
 CMakeFiles/run.dir/others/src/camera/video_wrapper.cpp.o: \
- /home/mechax/Code/SJTU-RM-CV-2019/others/src/camera/video_wrapper.cpp \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/src/camera/video_wrapper.cpp \
  /usr/include/stdc-predef.h \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/video_wrapper.h \
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/video_wrapper.h \
  /usr/local/include/opencv2/core/core.hpp \
  /usr/local/include/opencv2/core.hpp \
  /usr/local/include/opencv2/core/cvdef.h \
@@ -237,4 +237,4 @@ CMakeFiles/run.dir/others/src/camera/video_wrapper.cpp.o: \
  /usr/local/include/opencv2/videoio/videoio_c.h \
  /usr/local/include/opencv2/imgproc/imgproc.hpp \
  /usr/local/include/opencv2/imgproc.hpp \
- /home/mechax/Code/SJTU-RM-CV-2019/others/include/camera/wrapper_head.h
+ /home/mechax/documents/2023Mechax_cv/SJTU-RM-CV-2019/others/include/camera/wrapper_head.h

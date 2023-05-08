@@ -1,4 +1,0 @@
-Log file created at: 2023/04/25 17:28:58
-Running on machine: NUC-mechax-02
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-E0425 17:28:58.316848  4054 MVCAMAPI.cpp:309] CameraInit Failed, err:-18,Version:2.1.0.6,FriendlyName:°Ë¸Âÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,SN:021040120469
