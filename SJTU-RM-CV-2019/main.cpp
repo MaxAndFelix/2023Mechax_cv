@@ -14,8 +14,6 @@
 #include <serial.h>
 #include <camera/camera_wrapper.h>
 #include <camera/video_wrapper.h>
-#include <systime.h>
-#include <constants.h>
 #include <camera/wrapper_head.h>
 #include <energy/energy.h>
 #include <armor_finder/armor_finder.h>
@@ -37,7 +35,7 @@ McuData mcu_data = {    // 单片机端回传结构体
         ARMOR_STATE,    // 当前状态，自瞄-大符-小符
         0,              // 云台角度标记位
         0,              // 是否为反陀螺模式
-        ENEMY_BLUE,      // 敌方颜色
+        ENEMY_RED,      // 敌方颜色
         0,              // 能量机关x轴补偿量
         0,              // 能量机关y轴补偿量
 };
@@ -115,11 +113,7 @@ int main(int argc, char *argv[]) {
                     flip(src, src, GIMBAL_FLIP_MODE);
     #endif
                     if (!from_camera) extract(src);
-                    if (save_video) 
-                    {
-                        cout<<"**"<<endl;
-                        saveVideos(src);//保存视频
-                    }
+                    if (save_video) saveVideos(src);//保存视频
                     if (show_origin) showOrigin(src);//显示原始图像
                     energy.run(src);
                 }  else {                                         // 自瞄模式
@@ -152,6 +146,7 @@ int main(int argc, char *argv[]) {
                     });
                 }
                 last_state = curr_state;//更新上一帧状态
+                if (save_video) saveVideos(src);
                 if(run_by_frame) cv::waitKey(0);
             });
         } while (ok);

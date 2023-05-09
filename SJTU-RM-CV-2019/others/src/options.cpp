@@ -119,10 +119,12 @@ std::map<std::string, std::pair<std::string, void(*)(void)>> options = {
             LOGM("Enable show light blobs");
             // show_origin = true;
             LOGM("Enable show origin");
-            show_process = true;
+            // show_process = true;
             LOGM("Enable show processed image");
             show_energy = true;
             LOGM("Enable show energy part");
+            save_video = true;
+            LOGM("Enable save video!");
         }
     }}
 };

@@ -124,7 +124,12 @@ end:
         {
             //cout<<"********"<<endl;
             last_time_zero=now;    
-            // is_zero=1;
+            is_zero=1;
+            sendBoxPosition_0(0);
+        }
+        if(now-100>last_time_zero&&is_zero==1)
+        {
+            last_time_zero=now;  
             sendBoxPosition_0(0);
         }
     // }
