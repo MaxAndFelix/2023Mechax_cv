@@ -141,6 +141,9 @@ bool ArmorFinder::findArmorBox(const cv::Mat &src, ArmorBox &box) {
                 cv::Mat roi = src(armor_box.rect).clone();
                 cv::resize(roi, roi, cv::Size(48, 36));
                 int c = classifier(roi);
+                if(c == 0){
+                    c = 7;
+                }
                 armor_box.id = c;
             }
         }, armor_boxes.size());
@@ -177,6 +180,7 @@ bool ArmorFinder::findArmorBox(const cv::Mat &src, ArmorBox &box) {
         }
     } else { // 如果分类器不可用，则直接选取候选区中的第一个区域作为目标(往往会误识别)
         box = armor_boxes[0];
+        box.id = 7;
     }
     return true;
 }

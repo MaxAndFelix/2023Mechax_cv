@@ -9,6 +9,33 @@
 static bool sendTarget(Serial &serial, double x, double y, double z, uint16_t shoot_delay) {
     static short x_tmp, y_tmp, z_tmp;
     uint8_t buff[10];
+    if(z > 0 && z <= 100){
+        y = y + 3;
+    }
+    else if(z > 100 && z <= 200){
+        y = y + 4;
+    }
+    else if(z > 200 && z <= 300){
+        y = y + 5;
+    }
+    else if(z > 300 && z <= 400){
+        y = y + 6;
+    }
+    else if(z > 400 && z <= 500){
+        y = y + 7;
+    }
+    else if(z > 500 && z <= 600){
+        y = y + 8;
+    }
+    else if(z > 600 && z <= 700){
+        y = y + 9;
+    }
+    else if(z > 700 && z <= 800){
+        y = y + 10;
+    }
+    else{
+        y = y;
+    }
 
 #ifdef WITH_COUNT_FPS
     static time_t last_time = time(nullptr);
@@ -79,3 +106,5 @@ bool ArmorFinder::sendBoxPosition_0(uint16_t shoot_delay) {
     // cout << "1" << endl;
     return sendTarget(serial, yaw, -pitch, dist, shoot_delay);
 }
+
+bool 

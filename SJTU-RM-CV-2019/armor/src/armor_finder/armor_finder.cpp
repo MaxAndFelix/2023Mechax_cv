@@ -113,14 +113,14 @@ end:
         timeb t;
         ftime(&t);
         long now = t.time * 1000 + t.millitm;
-        if(now-200>last_time_zero&&is_zero==0)
+        if(now-200>last_time_zero&&is_zero==0)//避免跟踪时误丢失目标立刻停止跟踪
         {
             //cout<<"********"<<endl;
             last_time_zero=now;    
             is_zero=1;
             sendBoxPosition_0(0);
         }else
-        if(now-100>last_time_zero&&is_zero==1)
+        if(now-100>last_time_zero&&is_zero==1)//日常发0
         {
             //cout<<"********"<<endl;
             last_time_zero=now;    
@@ -135,7 +135,7 @@ end:
     }
 
     if (show_armor_box) {                 // 根据条件显示当前目标装甲板
-        showArmorBox("box", src, target_box);
+        showArmorBox("box", src, target_box); //box:弹出窗口 src:得到的图像 target_box: 识别到的
         cv::waitKey(1);
     }
 }
