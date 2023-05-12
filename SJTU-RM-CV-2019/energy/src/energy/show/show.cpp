@@ -38,7 +38,7 @@ void Energy::showFans(std::string windows_name, const cv::Mat &src) {
 //----------------------------------------------------------------------------------------------------------------------
 // 此函数用于显示图像中所有装甲板
 // ---------------------------------------------------------------------------------------------------------------------
-void Energy::showArmors(std::string windows_name, const cv::Mat &src) {
+void Energy::showHitpoint(std::string windows_name, const cv::Mat &src) {
     if (src.empty())return;
     static Mat image2show;
 

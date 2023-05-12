@@ -111,7 +111,7 @@ private:
     bool stayGuessing();//保持在猜测模式
 
     int findFans(const cv::Mat &src);//寻找图中所有扇叶
-    int findArmors(const cv::Mat &src);//寻找图中所有装甲板
+    int findHitpoint(const cv::Mat &src);//寻找图中所有装甲板
     bool findCenterR(const cv::Mat &src);//寻找图中可能的风车中心字母R
     bool findFlowStrip(const cv::Mat &src);//寻找图中的流动条
     bool findCenterROI(const cv::Mat &src);//框取中心R候选区
@@ -126,7 +126,7 @@ private:
     bool isValidFlowStripFanContour(cv::Mat &src, const vector<cv::Point> &flow_strip_fan_contour);//流动条扇叶矩形尺寸要求
 
     void showFans(std::string windows_name, const cv::Mat &src);//显示扇叶
-    void showArmors(std::string windows_name, const cv::Mat &src);//显示装甲板
+    void showHitpoint(std::string windows_name, const cv::Mat &src);//显示装甲板
     void showCenterR(std::string windows_name, const cv::Mat &src);//显示风车中心候选区R
     void showFlowStrip(std::string windows_name, const cv::Mat &src);//显示流动条
     void showFlowStripFan(std::string windows_name, const cv::Mat &src);//显示流动条所在扇叶

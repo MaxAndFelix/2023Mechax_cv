@@ -44,9 +44,9 @@ int Energy::findFans(const cv::Mat &src) {
 
 
 //----------------------------------------------------------------------------------------------------------------------
-// 此函数用于寻找图像内所有的大风车装甲板模块
+// 此函数用于寻找图像内所有的大风车模块
 // ---------------------------------------------------------------------------------------------------------------------
-int Energy::findArmors(const cv::Mat &src) {
+int Energy::findHitpoint(const cv::Mat &src) {
     if (src.empty()) {
         if (show_info) cout << "empty!" << endl;
         return 0;
@@ -61,9 +61,12 @@ int Energy::findArmors(const cv::Mat &src) {
 
     ArmorStruct(src_bin);//图像膨胀，防止图像断开并更方便寻找
     findContours(src_bin, armor_contours, CV_RETR_LIST, CV_CHAIN_APPROX_NONE);
-    if (show_process)imshow("armor struct", src_bin);
+    // if (show_process)
+    //     imshow("contours_CV_RETR_LIST", src_bin);
 
     findContours(src_bin, armor_contours_external, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
+    // if (show_process)
+    //     imshow("contours_CV_RETR_EXTERNAL", src_bin);
     for (int i = 0; i < armor_contours_external.size(); i++)//去除外轮廓
     {
         unsigned long external_contour_size = armor_contours_external[i].size();
@@ -76,6 +79,7 @@ int Energy::findArmors(const cv::Mat &src) {
             }
         }
     }
+
 
     for (auto &armor_contour : armor_contours) {
         if (!isValidArmorContour(armor_contour)) {
