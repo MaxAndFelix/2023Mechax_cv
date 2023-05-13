@@ -9,21 +9,20 @@
 using namespace std;
 using namespace cv;
 
-
 //----------------------------------------------------------------------------------------------------------------------
 // 此函数为能量机关模式主控制流函数，且步兵仅拥有云台摄像头
 // ---------------------------------------------------------------------------------------------------------------------
-void Energy::run(cv::Mat &src) {
+void Energy::run(cv::Mat &src)
+{
     clearAll();
-    initImage(src);
-
+    //initImage(src);
+    if (show_energy || show_process)
+        waitKey(1);
     // if (show_process)
     //     imshow("bin", src);
-    if (findHitpoint(src) < 1)
-        return;
-    if (show_energy)
-        showHitpoint("energy", src);
-
+    findHitpoint(src);
+    // if (show_energy)
+    //     showHitpoint("energy", src);
 
     // if (!findFlowStripFan(src)) {
     //     if (!findFlowStripWeak(src)) return;
@@ -54,5 +53,3 @@ void Energy::run(cv::Mat &src) {
     // sendEnergy();
     // if (save_mark)writeDownMark(src);
 }
-
-
