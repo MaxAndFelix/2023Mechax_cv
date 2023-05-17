@@ -106,5 +106,3 @@ bool ArmorFinder::sendBoxPosition_0(uint16_t shoot_delay) {
     // cout << "1" << endl;
     return sendTarget(serial, yaw, -pitch, dist, shoot_delay);
 }
-
-bool 

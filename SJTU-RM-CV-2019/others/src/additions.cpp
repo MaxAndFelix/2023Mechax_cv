@@ -95,7 +95,7 @@ auto video_writer = initVideoWriter(PROJECT_DIR"/video/");
 
 void saveVideos(const cv::Mat &gimbal_src) {
     if (!gimbal_src.empty()) {
-        cout<<"**"<<endl;
+        // cout<<"**"<<endl;
         video_writer.write(gimbal_src);
     } else return;
 }
