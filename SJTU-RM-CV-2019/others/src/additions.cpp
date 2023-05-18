@@ -40,7 +40,11 @@ void uartReceive(Serial *pSerial) {
         }
         pSerial->ReadData((uint8_t *) buffer+1, 7);
         if (buffer[7] == '\n') {
-            
+            mcu_data.curr_yaw = buffer[1];
+            mcu_data.curr_pitch = buffer[2];
+            mcu_data.state = buffer[3];
+            mcu_data.anti_top = buffer[5];
+            mcu_data.enemy_color = buffer[6];
             // memcpy(&mcu_data, buffer, sizeof(mcu_data));
             // printf("Get yaw:%f",mcu_data.curr_yaw);
 //            LOGM("Get, state:%c, mark:%d!", mcu_data.state, (int) mcu_data.mark);
