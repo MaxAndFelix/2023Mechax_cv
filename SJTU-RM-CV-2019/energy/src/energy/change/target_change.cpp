@@ -18,4 +18,5 @@ void Energy::changeTarget() {
         change_target = true;
     }
     last_target_polar_angle_judge_change = target_polar_angle;
+    cout<<target_polar_angle<<endl;
 }

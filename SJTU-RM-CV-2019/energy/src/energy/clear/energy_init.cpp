@@ -77,13 +77,13 @@ void Energy::initEnergyPartParam() {
     energy_part_param_.BLUE_GRAY_THRESH = 100;//game
     energy_part_param_.SPLIT_GRAY_THRESH = 180;
 
-    energy_part_param_.FAN_CONTOUR_AREA_MAX = 5000;
-    energy_part_param_.FAN_CONTOUR_AREA_MIN = 1500;
-    energy_part_param_.FAN_CONTOUR_LENGTH_MIN = 45;
-    energy_part_param_.FAN_CONTOUR_LENGTH_MAX = 100;
-    energy_part_param_.FAN_CONTOUR_WIDTH_MIN = 10;
-    energy_part_param_.FAN_CONTOUR_WIDTH_MAX = 52;
-    energy_part_param_.FAN_CONTOUR_HW_RATIO_MAX = 3.5;
+    energy_part_param_.FAN_CONTOUR_AREA_MAX = 6000;
+    energy_part_param_.FAN_CONTOUR_AREA_MIN = 2000;
+    energy_part_param_.FAN_CONTOUR_LENGTH_MIN = 100;
+    energy_part_param_.FAN_CONTOUR_LENGTH_MAX = 140;
+    energy_part_param_.FAN_CONTOUR_WIDTH_MIN = 50;
+    energy_part_param_.FAN_CONTOUR_WIDTH_MAX = 100;
+    energy_part_param_.FAN_CONTOUR_HW_RATIO_MAX = 2.4;
     energy_part_param_.FAN_CONTOUR_HW_RATIO_MIN = 1.2;
     energy_part_param_.FAN_CONTOUR_AREA_RATIO_MIN = 0.6;
 
@@ -95,14 +95,14 @@ void Energy::initEnergyPartParam() {
     energy_part_param_.ARMOR_CONTOUR_WIDTH_MAX = 30;
     energy_part_param_.ARMOR_CONTOUR_HW_RATIO_MAX = 3;
     energy_part_param_.ARMOR_CONTOUR_HW_RATIO_MIN = 1;
-
-    energy_part_param_.CENTER_R_CONTOUR_AREA_MAX = 200;
-    energy_part_param_.CENTER_R_CONTOUR_AREA_MIN = 40;
-    energy_part_param_.CENTER_R_CONTOUR_LENGTH_MIN = 6;
-    energy_part_param_.CENTER_R_CONTOUR_LENGTH_MAX = 20;
-    energy_part_param_.CENTER_R_CONTOUR_WIDTH_MIN = 6;
-    energy_part_param_.CENTER_R_CONTOUR_WIDTH_MAX = 20;
-    energy_part_param_.CENTER_R_CONTOUR_HW_RATIO_MAX = 2;
+//OK
+    energy_part_param_.CENTER_R_CONTOUR_AREA_MAX = 150;
+    energy_part_param_.CENTER_R_CONTOUR_AREA_MIN = 60;
+    energy_part_param_.CENTER_R_CONTOUR_LENGTH_MIN = 9;
+    energy_part_param_.CENTER_R_CONTOUR_LENGTH_MAX = 15;
+    energy_part_param_.CENTER_R_CONTOUR_WIDTH_MIN = 9;
+    energy_part_param_.CENTER_R_CONTOUR_WIDTH_MAX = 15;
+    energy_part_param_.CENTER_R_CONTOUR_HW_RATIO_MAX = 1.5;
     energy_part_param_.CENTER_R_CONTOUR_HW_RATIO_MIN = 1;
     energy_part_param_.CENTER_R_CONTOUR_AREA_RATIO_MIN = 0.6;
     energy_part_param_.CENTER_R_CONTOUR_INTERSETION_AREA_MIN = 10;
@@ -143,6 +143,7 @@ void Energy::initEnergyPartParam() {
 // 此函数对能量机关旋转方向进行初始化
 // ---------------------------------------------------------------------------------------------------------------------
 void Energy::initRotation() {
+    cout<<target_polar_angle<<endl;
     if (target_polar_angle >= -180 && last_target_polar_angle_judge_rotation >= -180
         && fabs(target_polar_angle - last_target_polar_angle_judge_rotation) < 30) {
         //target_polar_angle和last_target_polar_angle_judge_rotation的初值均为1000，大于-180表示刚开始几帧不要

@@ -20,5 +20,6 @@ void Energy::getPredictPoint(cv::Point target_point) {
         else if (energy_rotation_direction == -1) predict_rad = -predict_rad_norm;
         rotate(target_point);
     } else if (is_small) predict_point = target_point;
+    cout<<predict_point<<endl;
 }
 
