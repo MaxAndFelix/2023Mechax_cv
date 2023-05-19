@@ -26,15 +26,14 @@ int Energy::findFans(const cv::Mat &src)
     {
         cvtColor(src_bin, src_bin, CV_BGR2GRAY); // 若读取三通道视频文件，需转换为单通道
     }
-    threshold(src_bin, src_bin, energy_part_param_.RED_GRAY_THRESH, 255, THRESH_BINARY);
     std::vector<vector<Point>> fan_contours;
     FanStruct(src_bin); // 图像膨胀，防止图像断开并更方便寻src找
     if (show_process)
         imshow("fan struct", src_bin);
-    findContours(src_bin, fan_contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
-
+    findContours(src_bin, fan_contours, CV_RETR_TREE, CV_CHAIN_APPROX_NONE);
     for (auto &fan_contour : fan_contours)
     {
+        cout<<fan_contours.size()<<endl;
         if (!isValidFanContour(src_bin, fan_contour))
         {
             continue;
@@ -87,7 +86,7 @@ int Energy::findHitpoint(const cv::Mat &src)
     Point minLocation, maxLocation;
     minMaxLoc(matchResult, &minValue, &maxValue, &minLocation, &maxLocation);
     // 绘制矩形框标注匹配位置
-    // rectangle(src, maxLocation, Point(maxLocation.x + templateImage.cols, maxLocation.y + templateImage.rows), Scalar(0, 0, 255), 2);
+    rectangle(src, maxLocation, Point(maxLocation.x + templateImage.cols, maxLocation.y + templateImage.rows), Scalar(0, 0, 255), 2);
     std::vector<cv::Point2f> points;
     
     points.push_back(cv::Point2f(maxLocation.x, maxLocation.y));
@@ -132,14 +131,12 @@ bool Energy::findCenterR(const cv::Mat &src)
     {
         cvtColor(src_bin, src_bin, CV_BGR2GRAY);
     }
-    threshold(src_bin, src_bin, energy_part_param_.RED_GRAY_THRESH, 255, THRESH_BINARY);
     std::vector<vector<Point>> center_R_contours;
     CenterRStruct(src_bin);
-    findContours(src_bin, center_R_contours, CV_RETR_TREE, CV_CHAIN_APPROX_NONE);
+    findContours(src_bin, center_R_contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
     // if (show_process)
     //     imshow("R struct raw", src_bin);
     //drawContours(src_bin, center_R_contours, -1, Scalar(255, 0, 0), 2);
-    
     for (auto &center_R_contour : center_R_contours)
     {
         if (!isValidCenterRContour(center_R_contour))

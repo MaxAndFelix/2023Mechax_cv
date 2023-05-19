@@ -77,9 +77,9 @@ void Energy::initEnergyPartParam() {
     energy_part_param_.BLUE_GRAY_THRESH = 100;//game
     energy_part_param_.SPLIT_GRAY_THRESH = 180;
 
-    energy_part_param_.FAN_CONTOUR_AREA_MAX = 6000;
-    energy_part_param_.FAN_CONTOUR_AREA_MIN = 2000;
-    energy_part_param_.FAN_CONTOUR_LENGTH_MIN = 100;
+    energy_part_param_.FAN_CONTOUR_AREA_MAX = 7000;
+    energy_part_param_.FAN_CONTOUR_AREA_MIN = 1000;
+    energy_part_param_.FAN_CONTOUR_LENGTH_MIN = 80;
     energy_part_param_.FAN_CONTOUR_LENGTH_MAX = 140;
     energy_part_param_.FAN_CONTOUR_WIDTH_MIN = 50;
     energy_part_param_.FAN_CONTOUR_WIDTH_MAX = 100;
@@ -97,11 +97,11 @@ void Energy::initEnergyPartParam() {
     energy_part_param_.ARMOR_CONTOUR_HW_RATIO_MIN = 1;
 //OK
     energy_part_param_.CENTER_R_CONTOUR_AREA_MAX = 150;
-    energy_part_param_.CENTER_R_CONTOUR_AREA_MIN = 60;
-    energy_part_param_.CENTER_R_CONTOUR_LENGTH_MIN = 9;
-    energy_part_param_.CENTER_R_CONTOUR_LENGTH_MAX = 15;
-    energy_part_param_.CENTER_R_CONTOUR_WIDTH_MIN = 9;
-    energy_part_param_.CENTER_R_CONTOUR_WIDTH_MAX = 15;
+    energy_part_param_.CENTER_R_CONTOUR_AREA_MIN = 120;
+    energy_part_param_.CENTER_R_CONTOUR_LENGTH_MIN = 10;
+    energy_part_param_.CENTER_R_CONTOUR_LENGTH_MAX = 14;
+    energy_part_param_.CENTER_R_CONTOUR_WIDTH_MIN = 10;
+    energy_part_param_.CENTER_R_CONTOUR_WIDTH_MAX = 14;
     energy_part_param_.CENTER_R_CONTOUR_HW_RATIO_MAX = 1.5;
     energy_part_param_.CENTER_R_CONTOUR_HW_RATIO_MIN = 1;
     energy_part_param_.CENTER_R_CONTOUR_AREA_RATIO_MIN = 0.6;
@@ -109,10 +109,10 @@ void Energy::initEnergyPartParam() {
 
     energy_part_param_.FLOW_STRIP_FAN_CONTOUR_AREA_MAX = 2000;
     energy_part_param_.FLOW_STRIP_FAN_CONTOUR_AREA_MIN = 500;
-    energy_part_param_.FLOW_STRIP_FAN_CONTOUR_LENGTH_MIN = 60;
-    energy_part_param_.FLOW_STRIP_FAN_CONTOUR_LENGTH_MAX = 100;
-    energy_part_param_.FLOW_STRIP_FAN_CONTOUR_WIDTH_MIN = 20;
-    energy_part_param_.FLOW_STRIP_FAN_CONTOUR_WIDTH_MAX = 52;
+    energy_part_param_.FLOW_STRIP_FAN_CONTOUR_LENGTH_MIN = 80;
+    energy_part_param_.FLOW_STRIP_FAN_CONTOUR_LENGTH_MAX = 120;
+    energy_part_param_.FLOW_STRIP_FAN_CONTOUR_WIDTH_MIN = 30;
+    energy_part_param_.FLOW_STRIP_FAN_CONTOUR_WIDTH_MAX = 70;
     energy_part_param_.FLOW_STRIP_FAN_CONTOUR_HW_RATIO_MAX = 2.8;
     energy_part_param_.FLOW_STRIP_FAN_CONTOUR_HW_RATIO_MIN = 1.2;
     energy_part_param_.FLOW_STRIP_FAN_CONTOUR_AREA_RATIO_MAX = 0.58;

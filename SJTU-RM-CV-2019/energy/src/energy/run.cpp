@@ -15,12 +15,12 @@ using namespace cv;
 void Energy::run(cv::Mat &src)
 {
     clearAll();
-    //initImage(src);
     if (show_energy || show_process)
         waitKey(1);
     // if (show_process)
     //     imshow("bin", src);
     findHitpoint(src);
+    initImage(src);
     //findTargetInFlowStripFan();
     // if (show_energy)
     //     showHitpoint("energy", src);
@@ -41,8 +41,8 @@ void Energy::run(cv::Mat &src)
     fans_cnt = findFans(src);
     if (show_energy)showFans("fans", src);
 
-    changeTarget();
-    getTargetPolarAngle();
+    // changeTarget();
+    // getTargetPolarAngle();
 
     // if (is_big && energy_rotation_init) {
     //     initRotation();
@@ -51,6 +51,6 @@ void Energy::run(cv::Mat &src)
     // getPredictPoint(target_point);
     // getAimPoint(predict_point);
     // // judgeShoot();
-    // sendEnergy();
+    sendEnergy();
     // if (save_mark)writeDownMark(src);
 }
