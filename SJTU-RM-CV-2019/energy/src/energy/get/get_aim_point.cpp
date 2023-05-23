@@ -17,7 +17,7 @@ extern McuData mcu_data;
 void Energy::getAimPoint(cv::Point target_point_) {
     float target_polar_angle_ = static_cast<float>(180 / PI * atan2(-1 * (target_point_.y - circle_center_point.y),
                                                                     (target_point_.x - circle_center_point.x)));
-
+cout <<  "target_polar_angle_2 : " << target_polar_angle_ << endl;
     if (target_polar_angle_ > 0 && target_polar_angle_ <= 90) {
         extra_delta_x = EXTRA_DELTA_X * (90 - target_polar_angle_) / 90;
         extra_delta_y = -EXTRA_DELTA_Y * target_polar_angle_ / 90;

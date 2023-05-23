@@ -38,19 +38,19 @@ void Energy::run(cv::Mat &src)
     // if (show_energy)showFlowStrip("strip", src);
     if (!findCenterR(src)) return;
     if (show_energy)showCenterR("R", src);
-    fans_cnt = findFans(src);
-    if (show_energy)showFans("fans", src);
+    //fans_cnt = findFans(src);
+    //if (show_energy)showFans("fans", src);
 
-    // changeTarget();
-    // getTargetPolarAngle();
-
+    changeTarget();
+    getTargetPolarAngle();
+    cout <<  "target_polar_angle_1 : " << target_polar_angle << endl;
     // if (is_big && energy_rotation_init) {
     //     initRotation();
     //     return;
     // }
-    // getPredictPoint(target_point);
-    // getAimPoint(predict_point);
-    // // judgeShoot();
+    getPredictPoint(target_point);
+    getAimPoint(predict_point);
+    // judgeShoot();
     sendEnergy();
     // if (save_mark)writeDownMark(src);
 }

@@ -34,6 +34,7 @@ void Energy::initImage(cv::Mat &src) {
     } else if(mcu_data.enemy_color == ENEMY_RED){
         threshold(src, src, energy_part_param_.RED_GRAY_THRESH, 255, THRESH_BINARY);
     }
+
     // if (show_process) imshow("bin", src);
    
 }

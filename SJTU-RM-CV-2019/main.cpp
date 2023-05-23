@@ -68,7 +68,7 @@ int main(int argc, char *argv[]) {
         } else {
             cout << "prepare to load video";
             cout << PROJECT_DIR"/video/red_small.avi";
-            video = new VideoWrapper(PROJECT_DIR"/video/red_small_act.avi");
+            video = new VideoWrapper(PROJECT_DIR"/video/red_small.avi");
         }
         if (video->init()) {
             LOGM("video_source initialization successfully.");

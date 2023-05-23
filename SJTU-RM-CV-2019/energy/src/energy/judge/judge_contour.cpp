@@ -16,8 +16,8 @@ bool Energy::isValidFanContour(cv::Mat &src, const vector<cv::Point> &fan_contou
     if (cur_contour_area > energy_part_param_.FAN_CONTOUR_AREA_MAX ||
         cur_contour_area < energy_part_param_.FAN_CONTOUR_AREA_MIN)
     {
-        cout<<cur_contour_area<<endl;
-        cout<<"area fail."<<endl;
+        // cout<<cur_contour_area<<endl;
+        // cout<<"area fail."<<endl;
         return false;
         // 选区面积大小不合适
     }
@@ -29,7 +29,7 @@ bool Energy::isValidFanContour(cv::Mat &src, const vector<cv::Point> &fan_contou
         length > energy_part_param_.FAN_CONTOUR_LENGTH_MAX || width > energy_part_param_.FAN_CONTOUR_WIDTH_MAX)
     {
         cout<<"length width fail."<<endl;
-        cout << "length: " << length << '\t' << "width: " << width << '\t' << cur_rect.center << endl;
+        //cout << "length: " << length << '\t' << "width: " << width << '\t' << cur_rect.center << endl;
         return false;
         // 矩形边长不合适
     }
@@ -45,8 +45,8 @@ bool Energy::isValidFanContour(cv::Mat &src, const vector<cv::Point> &fan_contou
     //    cout << cur_contour_area / cur_size.area() << endl;
     if (cur_contour_area / cur_size.area() < energy_part_param_.FAN_CONTOUR_AREA_RATIO_MIN)
     {
-               cout << cur_contour_area / cur_size.area() << endl;
-               cout << "area ratio: " << cur_contour_area / cur_size.area() << '\t' << cur_rect.center << endl;
+               //cout << cur_contour_area / cur_size.area() << endl;
+               //cout << "area ratio: " << cur_contour_area / cur_size.area() << '\t' << cur_rect.center << endl;
         return false; // 轮廓对矩形的面积占有率不合适
     }
     double non_zero_rate = nonZeroRateOfRotateRect(src, cur_rect);
@@ -240,7 +240,7 @@ bool Energy::isValidFlowStripContour(const vector<cv::Point> &flow_strip_contour
     if (cur_contour_area > energy_part_param_.FLOW_STRIP_CONTOUR_AREA_MAX ||
         cur_contour_area < energy_part_param_.FLOW_STRIP_CONTOUR_AREA_MIN)
     {
-               cout<<"area fail."<<endl;
+        // cout<<"area fail."<<endl;
 
         return false;
         // 选区面积大小不合适

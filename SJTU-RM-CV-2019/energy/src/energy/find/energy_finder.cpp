@@ -61,6 +61,7 @@ int Energy::findHitpoint(const cv::Mat &src)
         return 0;
     }
     static Mat src_bin;
+    Mat src_cp = src.clone();
     src_bin = src.clone();
     if (src.type() == CV_8UC3)
         cvtColor(src_bin, src_bin, CV_BGR2GRAY); // 若读取三通道视频文件，需转换为单通道
@@ -73,7 +74,7 @@ int Energy::findHitpoint(const cv::Mat &src)
    
     // ArmorStruct(src_bin);
 
-    imwrite(PROJECT_DIR "/images/raw.jpg",src_bin);
+    // imwrite(PROJECT_DIR "/images/raw.jpg",src_bin);
 
     Mat templateImage = cv::imread(PROJECT_DIR "/images/tem.jpg");
     if (templateImage.type() == CV_8UC3)
@@ -92,7 +93,7 @@ int Energy::findHitpoint(const cv::Mat &src)
     Point minLocation, maxLocation;
     minMaxLoc(matchResult, &minValue, &maxValue, &minLocation, &maxLocation);
     // 绘制矩形框标注匹配位置
-    rectangle(src, maxLocation, Point(maxLocation.x + templateImage.cols, maxLocation.y + templateImage.rows), Scalar(0, 255, 0), 2);
+    rectangle(src_cp, maxLocation, Point(maxLocation.x + templateImage.cols, maxLocation.y + templateImage.rows), Scalar(0, 255, 0), 2);
     std::vector<cv::Point2f> points;
     
     points.push_back(cv::Point2f(maxLocation.x, maxLocation.y));
@@ -116,7 +117,7 @@ int Energy::findHitpoint(const cv::Mat &src)
     // }
     // cout<<"****"<<endl;
     // 显示结果图像
-    imshow("eeeeee", src);
+    imshow("eeeeee", src_cp);
     return static_cast<int>(armors.size());
 }
 
@@ -142,7 +143,7 @@ bool Energy::findCenterR(const cv::Mat &src)
     findContours(src_bin, center_R_contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
     // if (show_process)
     //     imshow("R struct raw", src_bin);
-    //drawContours(src_bin, center_R_contours, -1, Scalar(255, 0, 0), 2);
+    drawContours(src_bin, center_R_contours, -1, Scalar(255, 0, 0), 2);
     for (auto &center_R_contour : center_R_contours)
     {
         if (!isValidCenterRContour(center_R_contour))
@@ -150,8 +151,8 @@ bool Energy::findCenterR(const cv::Mat &src)
             continue;
         }
         centerR = cv::minAreaRect(center_R_contour);
-        // if (show_process)
-        //     imshow("R struct", src_bin);
+        if (show_process)
+            imshow("R struct", src_bin);
         float target_length =
             target_armor.size.height > target_armor.size.width ? target_armor.size.height : target_armor.size.width;
         circle_center_point = centerR.center;
