@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
     processOptions(argc, argv);             // 处理命令行参数
     thread receive(uartReceive, &serial);   // 开启串口接收线程
 
-    int from_camera = 1;                    // 根据条件选择视频源
+    int from_camera = 0;                    // 根据条件选择视频源
     if (!run_with_camera) {
         //cout << "Input 1 for camera, 0 for video files" << endl;
         //cin >> from_camera;
@@ -67,8 +67,8 @@ int main(int argc, char *argv[]) {
             video = new CameraWrapper(ARMOR_CAMERA_EXPOSURE, ARMOR_CAMERA_GAIN, 2);
         } else {
             cout << "prepare to load video";
-            cout << PROJECT_DIR"/video/big_red.avi";
-            video = new VideoWrapper(PROJECT_DIR"/video/big_red.avi");
+            cout << PROJECT_DIR"/video/red_small.avi";
+            video = new VideoWrapper(PROJECT_DIR"/video/red_small_act.avi");
         }
         if (video->init()) {
             LOGM("video_source initialization successfully.");

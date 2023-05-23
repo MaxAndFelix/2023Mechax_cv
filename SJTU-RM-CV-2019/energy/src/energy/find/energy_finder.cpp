@@ -64,10 +64,16 @@ int Energy::findHitpoint(const cv::Mat &src)
     src_bin = src.clone();
     if (src.type() == CV_8UC3)
         cvtColor(src_bin, src_bin, CV_BGR2GRAY); // 若读取三通道视频文件，需转换为单通道
-    threshold(src_bin, src_bin, energy_part_param_.RED_GRAY_THRESH, 255, THRESH_BINARY);
+
+    if (mcu_data.enemy_color == ENEMY_BLUE)
+        threshold(src_bin, src_bin, energy_part_param_.BLUE_GRAY_THRESH, 255, THRESH_BINARY);
+    else if(mcu_data.enemy_color == ENEMY_RED)
+        threshold(src_bin, src_bin, energy_part_param_.RED_GRAY_THRESH, 255, THRESH_BINARY);
+    
+   
     // ArmorStruct(src_bin);
 
-    // imwrite(PROJECT_DIR "/images/raw.jpg",src_bin);
+    imwrite(PROJECT_DIR "/images/raw.jpg",src_bin);
 
     Mat templateImage = cv::imread(PROJECT_DIR "/images/tem.jpg");
     if (templateImage.type() == CV_8UC3)
@@ -86,7 +92,7 @@ int Energy::findHitpoint(const cv::Mat &src)
     Point minLocation, maxLocation;
     minMaxLoc(matchResult, &minValue, &maxValue, &minLocation, &maxLocation);
     // 绘制矩形框标注匹配位置
-    rectangle(src, maxLocation, Point(maxLocation.x + templateImage.cols, maxLocation.y + templateImage.rows), Scalar(0, 0, 255), 2);
+    rectangle(src, maxLocation, Point(maxLocation.x + templateImage.cols, maxLocation.y + templateImage.rows), Scalar(0, 255, 0), 2);
     std::vector<cv::Point2f> points;
     
     points.push_back(cv::Point2f(maxLocation.x, maxLocation.y));

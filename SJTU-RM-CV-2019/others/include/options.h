@@ -8,7 +8,7 @@
 #ifdef PATH
     #define PROJECT_DIR PATH
 #else
-    #define PROJECT_DIR "/home/ubuntu/Documents/rm/2023Mechax_cv/SJTU-RM-CV-2019"
+    #define PROJECT_DIR "/home/ubuntu/Documents/rm/2023Mechax_cv/SJTU-RM-CV-2019/video"
 #endif
 
 extern bool show_armor_box;
