@@ -19,6 +19,6 @@
 
 #define FOCUS_PIXAL_8MM  (1488)
 #define FOCUS_PIXAL_5MM  (917)
-#define FOCUS_PIXAL      FOCUS_PIXAL_5MM
+#define FOCUS_PIXAL      FOCUS_PIXAL_8MM
 
 #endif /* _CONSTANTS_H */
